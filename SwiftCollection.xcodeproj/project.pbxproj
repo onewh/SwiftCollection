@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		055C4A4ED646869C01457E40 /* Pods_SwiftCollectionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA708CDC52C80F475B9F2F93 /* Pods_SwiftCollectionTests.framework */; };
 		2F2896754DB36CA87E1DFEC9 /* Pods_SwiftCollectionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F8584FC4EC86A747BE2698 /* Pods_SwiftCollectionUITests.framework */; };
+		5307244420F5B147001B7307 /* BaseViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5307244320F5B147001B7307 /* BaseViewControllerProtocol.swift */; };
+		5307244820F5B258001B7307 /* DWBaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5307244720F5B258001B7307 /* DWBaseTabBarController.swift */; };
+		5307244A20F5B32A001B7307 /* DWBaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5307244920F5B32A001B7307 /* DWBaseNavigationController.swift */; };
+		5307244C20F5B3D3001B7307 /* ViewControllerEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5307244B20F5B3D3001B7307 /* ViewControllerEvent.swift */; };
+		5307244E20F5B4F8001B7307 /* DWHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5307244D20F5B4F7001B7307 /* DWHomeViewController.swift */; };
+		53B14B9520FC6F2200820BEF /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53B14B9420FC6F2200820BEF /* Home.storyboard */; };
+		53B14B9820FC703800820BEF /* DWDispatchTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B14B9720FC703800820BEF /* DWDispatchTestViewController.swift */; };
 		53C8477E20F59E760096A334 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53C8477D20F59E760096A334 /* AppDelegate.swift */; };
 		53C8478320F59E760096A334 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53C8478120F59E760096A334 /* Main.storyboard */; };
 		53C8478620F59E760096A334 /* SwiftCollection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53C8478420F59E760096A334 /* SwiftCollection.xcdatamodeld */; };
@@ -38,6 +45,13 @@
 
 /* Begin PBXFileReference section */
 		347E95BF177812B82315CAF5 /* Pods-SwiftCollectionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCollectionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCollectionTests/Pods-SwiftCollectionTests.release.xcconfig"; sourceTree = "<group>"; };
+		5307244320F5B147001B7307 /* BaseViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewControllerProtocol.swift; sourceTree = "<group>"; };
+		5307244720F5B258001B7307 /* DWBaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWBaseTabBarController.swift; sourceTree = "<group>"; };
+		5307244920F5B32A001B7307 /* DWBaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWBaseNavigationController.swift; sourceTree = "<group>"; };
+		5307244B20F5B3D3001B7307 /* ViewControllerEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerEvent.swift; sourceTree = "<group>"; };
+		5307244D20F5B4F7001B7307 /* DWHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWHomeViewController.swift; sourceTree = "<group>"; };
+		53B14B9420FC6F2200820BEF /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		53B14B9720FC703800820BEF /* DWDispatchTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DWDispatchTestViewController.swift; sourceTree = "<group>"; };
 		53C8477A20F59E760096A334 /* SwiftCollection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCollection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		53C8477D20F59E760096A334 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		53C8478220F59E760096A334 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,6 +116,7 @@
 		5307243620F5A7C5001B7307 /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
+				5307244220F5B125001B7307 /* Base */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";
@@ -109,7 +124,6 @@
 		5307243820F5A7F7001B7307 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				5307243920F5A844001B7307 /* Supporting File */,
 				53C8477D20F59E760096A334 /* AppDelegate.swift */,
 				53C8478720F59E780096A334 /* Assets.xcassets */,
 			);
@@ -130,6 +144,7 @@
 			children = (
 				53C8478120F59E760096A334 /* Main.storyboard */,
 				53C8478920F59E780096A334 /* LaunchScreen.storyboard */,
+				53B14B9420FC6F2200820BEF /* Home.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -137,6 +152,7 @@
 		5307243B20F5A88C001B7307 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5307244B20F5B3D3001B7307 /* ViewControllerEvent.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -172,8 +188,36 @@
 		5307244020F5A916001B7307 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				53B14B9620FC700600820BEF /* Home */,
+				5307244620F5B198001B7307 /* Tab&Navi */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5307244220F5B125001B7307 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5307244320F5B147001B7307 /* BaseViewControllerProtocol.swift */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		5307244620F5B198001B7307 /* Tab&Navi */ = {
+			isa = PBXGroup;
+			children = (
+				5307244720F5B258001B7307 /* DWBaseTabBarController.swift */,
+				5307244920F5B32A001B7307 /* DWBaseNavigationController.swift */,
+			);
+			path = "Tab&Navi";
+			sourceTree = "<group>";
+		};
+		53B14B9620FC700600820BEF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5307244D20F5B4F7001B7307 /* DWHomeViewController.swift */,
+				53B14B9720FC703800820BEF /* DWDispatchTestViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		53C8477120F59E760096A334 = {
@@ -207,6 +251,7 @@
 				5307243B20F5A88C001B7307 /* Extension */,
 				5307243C20F5A8B9001B7307 /* Utility */,
 				5307243D20F5A8D3001B7307 /* Resources */,
+				5307243920F5A844001B7307 /* Supporting File */,
 				5307243A20F5A86E001B7307 /* StoryBoards */,
 			);
 			path = SwiftCollection;
@@ -319,6 +364,7 @@
 		53C8477220F59E760096A334 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DW;
 				LastSwiftUpdateCheck = 0940;
 				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = onewh;
@@ -364,6 +410,7 @@
 				53C8478B20F59E780096A334 /* LaunchScreen.storyboard in Resources */,
 				53C8478820F59E780096A334 /* Assets.xcassets in Resources */,
 				53C8478320F59E760096A334 /* Main.storyboard in Resources */,
+				53B14B9520FC6F2200820BEF /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,8 +512,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5307244A20F5B32A001B7307 /* DWBaseNavigationController.swift in Sources */,
 				53C8478620F59E760096A334 /* SwiftCollection.xcdatamodeld in Sources */,
+				5307244820F5B258001B7307 /* DWBaseTabBarController.swift in Sources */,
+				53B14B9820FC703800820BEF /* DWDispatchTestViewController.swift in Sources */,
+				5307244420F5B147001B7307 /* BaseViewControllerProtocol.swift in Sources */,
+				5307244E20F5B4F8001B7307 /* DWHomeViewController.swift in Sources */,
 				53C8477E20F59E760096A334 /* AppDelegate.swift in Sources */,
+				5307244C20F5B3D3001B7307 /* ViewControllerEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -642,7 +695,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3T45M5L8GE;
-				INFOPLIST_FILE = SwiftCollection/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCollection/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -661,7 +714,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3T45M5L8GE;
-				INFOPLIST_FILE = SwiftCollection/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/SwiftCollection/Supporting File/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
